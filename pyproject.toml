@@ -1,0 +1,24 @@
+[project]
+name = "DiffusionLight"
+version = "2024.12.18"
+dependencies = [
+    "tqdm==4.66.1",
+    "scikit-image==0.21.0",
+    "imageio==2.31.1",
+    "Pillow==10.2.0",
+    "numpy==1.24.1",
+    "natsort==8.4.0",
+    "skylibs==0.7.4",
+    "torch==2.0.1",
+    "torchvision==0.15.2",
+    "torchaudio==2.0.2",
+    "accelerate==0.21.0",
+    "datasets==2.13.1",
+    "diffusers==0.21.0",
+    "transformers==4.36.0",
+    "xformers==0.0.20",
+    "peft==0.14.0",
+    "cuda-python==11.8",
+    "huggingface-hub==0.25.0",
+    "openexr-python>=2024.1.5.11.15.26",
+]

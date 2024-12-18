@@ -91,6 +91,7 @@ def estimate_scene_depth(image, depth_estimator):
     W, H = image.size
     depth_map = torch.nn.functional.interpolate(
         depth_map.unsqueeze(1),
+        #depth_map.unsqueeze(0).unsqueeze(0),
         size=(H, W),
         mode="bicubic",
         align_corners=False,
