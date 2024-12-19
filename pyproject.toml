@@ -1,6 +1,7 @@
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
 [project]
 name = "DiffusionLight"
 version = "2024.12.18"
@@ -23,7 +24,7 @@ dependencies = [
     "peft==0.14.0",
     "cuda-python==11.8",
     "huggingface-hub==0.25.0",
-    "openexr-python>=2024.1.5pyproject.toml.11.15.26",
+    "openexr-python>=2024.1.5",
     "opencv-python>=4.8.1.78",
     "ipykernel>=6.29.5",
 ]
