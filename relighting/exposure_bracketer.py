@@ -6,7 +6,6 @@ from multiprocessing import Pool
 from tqdm import tqdm
 import numpy as np
 import skimage
-import ezexr
 from relighting.tonemapper import TonemapHDR
 
 class ExposureBracketer:

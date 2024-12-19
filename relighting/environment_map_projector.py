@@ -9,12 +9,6 @@ from functools import partial
 from tqdm.auto import tqdm
 import os
 
-try:
-    import ezexr
-except:
-    pass
-
-
 class EnvironmentMapProjector:
     def create_envmap_grid(self, size: int) -> np.ndarray:
         """
