@@ -53,7 +53,8 @@ class RuntimeConfig:
 @dataclass
 class PipelineConfig:
     model_option: str = "sdxl" # "sdxl" "sdxl_turbo" "sdxl_fast"
-    lora_path: str = "models/ThisIsTheFinal-lora-hdr-continuous-largeT@900/0_-5/checkpoint-2500"
+    #lora_path: str = "models/ThisIsTheFinal-lora-hdr-continuous-largeT@900/0_-5/checkpoint-2500"
+    lora_path: str = "DiffusionLight/DiffusionLight"
     img_height: int = 1024
     img_width: int = 1024
 
