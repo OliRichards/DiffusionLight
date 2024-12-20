@@ -39,8 +39,8 @@ class EnvironmentMapGenerator:
         cropped_spheres = self.chromeBallGenerator.generate_spheres(image, seed)
         env_maps = {}
         for ev, im in cropped_spheres.items():
-            im.save(f"output/{ev}.png")
+            # im.save(f"output/{ev}.png")
             env_maps[ev] = self.environmentMapProjector(im) / 255
-            Image.fromarray((env_maps[ev] * 255).astype(np.uint8)).save(f"output/bed_ev-{int(ev*10)}_map.png")
+            # Image.fromarray((env_maps[ev] * 255).astype(np.uint8)).save(f"output/bed_ev-{int(ev*10)}_map.png")
         hdr_env_map = self.exposureBracketer(env_maps)
         return hdr_env_map
