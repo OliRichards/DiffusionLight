@@ -145,7 +145,7 @@ class ChromeBallGenerator:
         else:
             enabled_lora = False
 
-        if True:
+        if False:
             try:
                 print("compiling unet model")
                 start_time = time.time()
