@@ -43,4 +43,6 @@ class EnvironmentMapGenerator:
             env_maps[ev] = self.environmentMapProjector(im) / 255
             # Image.fromarray((env_maps[ev] * 255).astype(np.uint8)).save(f"output/bed_ev-{int(ev*10)}_map.png")
         hdr_env_map = self.exposureBracketer(env_maps)
+        # Env maps are coming out flipped... dont ask me why
+        hdr_env_map = np.flipud(hdr_env_map)
         return hdr_env_map
